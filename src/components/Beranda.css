@@ -1,0 +1,131 @@
+.i {
+  display: flex;
+  background-image: url(/src/assets/image.png);
+  background-size: cover;
+  padding-left: 0px;
+  right: 80%;
+  /* height: 80%; */
+  padding-right: 100px;
+}
+
+.i-left {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+  /* min-height: 100%; */
+}
+
+.i-right {
+  left: 5%;
+  padding: 5px;
+  flex: 1.5;
+  position: relative;
+}
+
+.i-left-wrapper {
+  padding: 20vh;
+  font-size: 20px;
+  display: flex;
+  text-align: justify;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.i-intro {
+  font-size: 30px;
+  font-weight: 60px;
+}
+
+.i-name {
+  position: relative;
+  font-size: 40px;
+  font-family: Oswald;
+  /* display: flex; */
+  justify-content: space-between;
+}
+
+.i-title {
+  height: 5px;
+  overflow: hidden;
+}
+
+.i-title-wrapper {
+  height: 100%;
+  animation: move 10s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+  25% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  75% {
+    transform: translateY(-150px);
+  }
+  100% {
+    transform: translateY(-200px);
+  }
+}
+
+.i-title-item {
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #59b256;
+  display: flex;
+  align-items: center;
+}
+
+.i-scroll {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.i-img {
+  width: 100%;
+  right: 80px;
+  height: 90%;
+  /* object-fit: cover; */
+  position: center;
+}
+
+.hal__brand {
+  display: flex;
+  position: center;
+  vertical-align: middle;
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+  .i {
+    flex-direction: column;
+    display: flex;
+    /* height: 100vh; */
+    background-image: url(/src/assets/image.png);
+    background-size: cover;
+  }
+
+  .i-left-wrapper {
+    padding: 15px;
+    align-items: center;
+    height: 55%;
+    font-size: 16px;
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .i-desc {
+    display: none;
+    position: relative;
+  }
+}
